@@ -4,7 +4,6 @@ title: Research
 permalink: /research/
 nav: true
 nav_order: 3
-description: A landing page for publications, project pages, and the research themes that tie the portfolio together.
 ---
 
 [Research overview goes here: a highlights-first summary of themes, methods, and current questions.]

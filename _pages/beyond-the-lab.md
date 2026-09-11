@@ -4,7 +4,6 @@ title: Beyond the lab
 permalink: /beyond-the-lab/
 nav: true
 nav_order: 4
-description: A place for the interests and hands-on projects that complement the academic side of the site without feeling separate from it.
 ---
 
 [Beyond-the-lab overview goes here: a short note showing how hobbies, making, and research all live on the same site without splitting into separate identities.]

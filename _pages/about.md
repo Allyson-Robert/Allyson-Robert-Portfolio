@@ -4,7 +4,6 @@ title: About & CV
 permalink: /about/
 nav: true
 nav_order: 2
-description: A short overview of the experiences, transitions, and materials that connect my academic work with the rest of my practice.
 ---
 
 ## Bio
