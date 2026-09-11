@@ -188,68 +188,6 @@ a.badge {
   color: var(--global-text-color-light);
 }
 
-.hero {
-  padding: 56px 48px;
-}
-
-.hero-tagline {
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  color: v.$orange-color;
-  margin: 0 0 12px;
-}
-
-.hero-headline {
-  font-size: 34px;
-  font-weight: 500;
-  color: v.$black-color;
-  line-height: 1.25;
-  margin: 0 0 16px;
-}
-
-.hero-subtext {
-  font-size: 16px;
-  color: v.$black-color;
-  opacity: 0.75;
-  line-height: 1.7;
-  max-width: 480px;
-  margin: 0 0 28px;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 12px;
-}
-
-.hero .btn-primary,
-.hero .btn-secondary {
-  display: inline-block;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.hero .btn-primary {
-  background: v.$purple-color;
-  color: v.$white-color;
-  border: none;
-}
-
-.hero .btn-secondary {
-  background: transparent;
-  color: v.$purple-color;
-  border: 1.5px solid v.$purple-color;
-}
-
-.hero-tags {
-  display: flex;
-  gap: 8px;
-  margin-top: 32px;
-}
-
 .tag-badge {
   background: v.$orange-color;
   color: v.$white-color;

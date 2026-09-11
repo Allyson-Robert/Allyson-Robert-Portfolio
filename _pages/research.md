@@ -4,18 +4,7 @@ title: Research
 permalink: /research/
 nav: true
 nav_order: 3
-tagline: Research highlights, questions, and ongoing project work
-subtext: A landing page for publications, project pages, and the research themes that tie the portfolio together.
-hero_buttons:
-  - label: Publications
-    url: /publications/
-    style: secondary
-  - label: Project pages
-    url: /projects/
-    style: primary
-tags:
-  - Photovoltaics
-  - Colourimetry
+description: A landing page for publications, project pages, and the research themes that tie the portfolio together.
 ---
 
 [Research overview goes here: a highlights-first summary of themes, methods, and current questions.]

@@ -5,19 +5,7 @@ nav_title: Home
 permalink: /
 nav: true
 nav_order: 1
-tagline: Researcher · maker · figure skater
-subtext: A shared space for research, projects, and the parts of life beyond the lab that shape how I work.
-hero_buttons:
-  - label: About & CV
-    url: /about/
-    style: secondary
-  - label: Research
-    url: /research/
-    style: primary
-tags:
-  - Photovoltaics
-  - Colourimetry
-  - Figure skating
+description: A shared space for research, projects, and the parts of life beyond the lab that shape how I work.
 ---
 
 <div class="section-card">

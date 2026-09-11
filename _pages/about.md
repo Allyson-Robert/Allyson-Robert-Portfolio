@@ -4,15 +4,7 @@ title: About & CV
 permalink: /about/
 nav: true
 nav_order: 2
-tagline: Background, training, and the path that shaped this portfolio
-subtext: A short overview of the experiences, transitions, and materials that connect my academic work with the rest of my practice.
-hero_buttons:
-  - label: Download CV
-    url: /assets/pdf/allyson-robert-cv-placeholder.pdf
-    style: secondary
-  - label: Contact
-    url: /contact/
-    style: primary
+description: A short overview of the experiences, transitions, and materials that connect my academic work with the rest of my practice.
 ---
 
 ## Bio
