@@ -4,19 +4,7 @@ title: Beyond the lab
 permalink: /beyond-the-lab/
 nav: true
 nav_order: 4
-tagline: The personal work, hobbies, and making practice behind the research
-subtext: A place for the interests and hands-on projects that complement the academic side of the site without feeling separate from it.
-hero_buttons:
-  - label: Hobbies
-    url: /hobbies/
-    style: secondary
-  - label: Templates & builds
-    url: /templates-and-builds/
-    style: primary
-tags:
-  - Figure skating
-  - Drawing
-  - Nordic cooking
+description: A place for the interests and hands-on projects that complement the academic side of the site without feeling separate from it.
 ---
 
 [Beyond-the-lab overview goes here: a short note showing how hobbies, making, and research all live on the same site without splitting into separate identities.]
