@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Beyond the lab · Allyson Robert
+    </title>
+    <meta name="description" content="A portfolio site bringing together academic research, side projects, and life beyond the lab.">
+    <link rel="stylesheet" href="/Allyson-Robert-Portfolio/assets/css/main.css">
+    
+      <link rel="canonical" href="https://allyson-robert.github.io/Allyson-Robert-Portfolio/beyond-the-lab/">
+      <link type="application/atom+xml" rel="alternate" href="https://allyson-robert.github.io/Allyson-Robert-Portfolio/feed.xml" title="Allyson Robert" />
+    
+  </head>
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <header>
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/Allyson-Robert-Portfolio/">Allyson Robert</a>
+          <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+            <ul class="navbar-nav navbar-menu-list flex-nowrap">
+              
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/">
+                    Home
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/about/">
+                    About & CV
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/research/">
+                    Research
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item active">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/beyond-the-lab/">
+                    Beyond the lab
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/contact/">
+                    Contact & links
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5" role="main">
+      <div class="post">
+  
+    <div class="hero">
+  
+    <p class="hero-tagline">The personal work, hobbies, and making practice behind the research</p>
+  
+  <h1 class="hero-headline">Beyond the lab</h1>
+  
+    <p class="hero-subtext">A place for the interests and hands-on projects that complement the academic side of the site without feeling separate from it.</p>
+  
+  
+    <div class="hero-buttons">
+      
+        <a class="btn-secondary" href="/Allyson-Robert-Portfolio/hobbies/">Hobbies</a>
+      
+        <a class="btn-primary" href="/Allyson-Robert-Portfolio/templates-and-builds/">Templates & builds</a>
+      
+    </div>
+  
+  
+    <div class="hero-tags">
+      
+        <span class="tag-badge">Figure skating</span>
+      
+        <span class="tag-badge">Drawing</span>
+      
+        <span class="tag-badge">Nordic cooking</span>
+      
+    </div>
+  
+</div>
+
+  
+
+  <article>
+    <p>[Beyond-the-lab overview goes here: a short note showing how hobbies, making, and research all live on the same site without splitting into separate identities.]</p>
+
+<h2 id="explore-this-section">Explore this section</h2>
+
+<ul>
+  <li><a href="/Allyson-Robert-Portfolio/hobbies/">Hobbies</a> — figure skating, drawing, and Nordic/Finnish cooking.</li>
+  <li><a href="/Allyson-Robert-Portfolio/templates-and-builds/">Templates &amp; builds</a> — LaTeX templates and occasional 3D-printable model files.</li>
+</ul>
+
+<h2 id="personal-themes-to-feature">Personal themes to feature</h2>
+
+<ul>
+  <li>[What figure skating contributes to focus and discipline goes here.]</li>
+  <li>[What drawing contributes to observation and creativity goes here.]</li>
+  <li>[What Nordic/Finnish cooking contributes to craft and tradition goes here.]</li>
+</ul>
+
+  </article>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="container mt-0">
+        <small>Built with Jekyll and the al-folio starter, with one shared visual language for research, projects, hobbies, and personal builds.</small>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const navButton = document.querySelector('[data-nav-toggle]');
+        if (!navButton) return;
+        const navTarget = document.getElementById(navButton.getAttribute('data-nav-toggle'));
+        if (!navTarget) return;
+
+        navButton.addEventListener('click', function () {
+          const isExpanded = navButton.getAttribute('aria-expanded') === 'true';
+          navButton.setAttribute('aria-expanded', String(!isExpanded));
+          navButton.classList.toggle('collapsed', isExpanded);
+          navTarget.classList.toggle('show', !isExpanded);
+        });
+      });
+    </script>
+  </body>
+</html>

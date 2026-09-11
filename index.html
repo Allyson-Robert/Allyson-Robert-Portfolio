@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      One portfolio, one voice · Allyson Robert
+    </title>
+    <meta name="description" content="A portfolio site bringing together academic research, side projects, and life beyond the lab.">
+    <link rel="stylesheet" href="/Allyson-Robert-Portfolio/assets/css/main.css">
+    
+      <link rel="canonical" href="https://allyson-robert.github.io/Allyson-Robert-Portfolio/">
+      <link type="application/atom+xml" rel="alternate" href="https://allyson-robert.github.io/Allyson-Robert-Portfolio/feed.xml" title="Allyson Robert" />
+    
+  </head>
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <header>
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/Allyson-Robert-Portfolio/">Allyson Robert</a>
+          <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+            <ul class="navbar-nav navbar-menu-list flex-nowrap">
+              
+              
+                <li class="nav-item active">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/">
+                    Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/about/">
+                    About & CV
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/research/">
+                    Research
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/beyond-the-lab/">
+                    Beyond the lab
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/contact/">
+                    Contact & links
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5" role="main">
+      <div class="post">
+  
+    <div class="hero">
+  
+    <p class="hero-tagline">Researcher · maker · figure skater</p>
+  
+  <h1 class="hero-headline">One portfolio, one voice</h1>
+  
+    <p class="hero-subtext">A shared space for research, projects, and the parts of life beyond the lab that shape how I work.</p>
+  
+  
+    <div class="hero-buttons">
+      
+        <a class="btn-secondary" href="/Allyson-Robert-Portfolio/about/">About & CV</a>
+      
+        <a class="btn-primary" href="/Allyson-Robert-Portfolio/research/">Research</a>
+      
+    </div>
+  
+  
+    <div class="hero-tags">
+      
+        <span class="tag-badge">Photovoltaics</span>
+      
+        <span class="tag-badge">Colourimetry</span>
+      
+        <span class="tag-badge">Figure skating</span>
+      
+    </div>
+  
+</div>
+
+  
+
+  <article>
+    <div class="section-card">
+  <h2>Current focus</h2>
+  <p>[Featured research highlight goes here.]</p>
+  <p>[Featured personal or side-project highlight goes here.]</p>
+</div>
+
+<div class="section-card">
+  <h2>Recent updates</h2>
+  <ul>
+    <li>[Research news or publication milestone goes here.]</li>
+    <li>[Personal project, hobby update, or new build release goes here.]</li>
+  </ul>
+</div>
+
+<p class="editorial-note">Typography note: the current scaffold keeps al-folio's default type stack. If you'd like a more editorial pairing later, good fits for this palette are <strong>Crimson Pro + Inter</strong> or <strong>Source Serif 4 + Source Sans 3</strong>.</p>
+
+  </article>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="container mt-0">
+        <small>Built with Jekyll and the al-folio starter, with one shared visual language for research, projects, hobbies, and personal builds.</small>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const navButton = document.querySelector('[data-nav-toggle]');
+        if (!navButton) return;
+        const navTarget = document.getElementById(navButton.getAttribute('data-nav-toggle'));
+        if (!navTarget) return;
+
+        navButton.addEventListener('click', function () {
+          const isExpanded = navButton.getAttribute('aria-expanded') === 'true';
+          navButton.setAttribute('aria-expanded', String(!isExpanded));
+          navButton.classList.toggle('collapsed', isExpanded);
+          navTarget.classList.toggle('show', !isExpanded);
+        });
+      });
+    </script>
+  </body>
+</html>

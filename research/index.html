@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Research · Allyson Robert
+    </title>
+    <meta name="description" content="A portfolio site bringing together academic research, side projects, and life beyond the lab.">
+    <link rel="stylesheet" href="/Allyson-Robert-Portfolio/assets/css/main.css">
+    
+      <link rel="canonical" href="https://allyson-robert.github.io/Allyson-Robert-Portfolio/research/">
+      <link type="application/atom+xml" rel="alternate" href="https://allyson-robert.github.io/Allyson-Robert-Portfolio/feed.xml" title="Allyson Robert" />
+    
+  </head>
+  <body class="fixed-top-nav sticky-bottom-footer">
+    <header>
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/Allyson-Robert-Portfolio/">Allyson Robert</a>
+          <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+            <ul class="navbar-nav navbar-menu-list flex-nowrap">
+              
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/">
+                    Home
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/about/">
+                    About & CV
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item active">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/research/">
+                    Research
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/beyond-the-lab/">
+                    Beyond the lab
+                    
+                  </a>
+                </li>
+              
+                <li class="nav-item ">
+                  <a class="nav-link" href="/Allyson-Robert-Portfolio/contact/">
+                    Contact & links
+                    
+                  </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5" role="main">
+      <div class="post">
+  
+    <div class="hero">
+  
+    <p class="hero-tagline">Research highlights, questions, and ongoing project work</p>
+  
+  <h1 class="hero-headline">Research</h1>
+  
+    <p class="hero-subtext">A landing page for publications, project pages, and the research themes that tie the portfolio together.</p>
+  
+  
+    <div class="hero-buttons">
+      
+        <a class="btn-secondary" href="/Allyson-Robert-Portfolio/publications/">Publications</a>
+      
+        <a class="btn-primary" href="/Allyson-Robert-Portfolio/projects/">Project pages</a>
+      
+    </div>
+  
+  
+    <div class="hero-tags">
+      
+        <span class="tag-badge">Photovoltaics</span>
+      
+        <span class="tag-badge">Colourimetry</span>
+      
+    </div>
+  
+</div>
+
+  
+
+  <article>
+    <p>[Research overview goes here: a highlights-first summary of themes, methods, and current questions.]</p>
+
+<h2 id="explore-this-section">Explore this section</h2>
+
+<ul>
+  <li><a href="/Allyson-Robert-Portfolio/publications/">Publications</a> — journal articles, preprints, and supporting links.</li>
+  <li><a href="/Allyson-Robert-Portfolio/projects/">Project pages</a> — one page per research project in the <code class="language-plaintext highlighter-rouge">_projects</code> collection.</li>
+</ul>
+
+<h2 id="highlighted-research-directions">Highlighted research directions</h2>
+
+<ul>
+  <li>[Research theme one summary goes here.]</li>
+  <li>[Research theme two summary goes here.]</li>
+  <li>[Collaboration or methods note goes here.]</li>
+</ul>
+
+  </article>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="container mt-0">
+        <small>Built with Jekyll and the al-folio starter, with one shared visual language for research, projects, hobbies, and personal builds.</small>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const navButton = document.querySelector('[data-nav-toggle]');
+        if (!navButton) return;
+        const navTarget = document.getElementById(navButton.getAttribute('data-nav-toggle'));
+        if (!navTarget) return;
+
+        navButton.addEventListener('click', function () {
+          const isExpanded = navButton.getAttribute('aria-expanded') === 'true';
+          navButton.setAttribute('aria-expanded', String(!isExpanded));
+          navButton.classList.toggle('collapsed', isExpanded);
+          navTarget.classList.toggle('show', !isExpanded);
+        });
+      });
+    </script>
+  </body>
+</html>
