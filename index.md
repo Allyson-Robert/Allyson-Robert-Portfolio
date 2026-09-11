@@ -26,10 +26,8 @@ nav_order: 1
 <div class="section-card">
   <h2>Recent updates</h2>
   <ul>
-    {% assign latest_news = site.news | sort: 'date' | reverse %}
-    {% for item in latest_news limit: 2 %}
-      <li><strong>{{ item.date | date: '%b %-d, %Y' }}</strong> — {{ item.inline }}</li>
-    {% endfor %}
+    <li>[Research news or publication milestone goes here.]</li>
+    <li>[Personal project, hobby update, or new build release goes here.]</li>
   </ul>
 </div>
 

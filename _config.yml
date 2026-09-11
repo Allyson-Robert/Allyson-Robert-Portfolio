@@ -69,6 +69,11 @@ defaults:
 exclude:
   - README.md
   - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - purgecss.config.js
   - vendor/
 keep_files:
   - CNAME
