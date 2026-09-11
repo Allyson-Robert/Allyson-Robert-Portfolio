@@ -71,9 +71,6 @@ exclude:
   - LICENSE
   - Gemfile
   - Gemfile.lock
-  - package.json
-  - package-lock.json
-  - purgecss.config.js
   - vendor/
 theme: al_folio_core
 plugins:

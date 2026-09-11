@@ -17,9 +17,6 @@ on:
       - "**/*.yml"
       - "Gemfile"
       - "Gemfile.lock"
-      - "package.json"
-      - "package-lock.json"
-      - "purgecss.config.js"
       - "CNAME"
   workflow_dispatch:
 
@@ -39,22 +36,10 @@ jobs:
           ruby-version: '3.3.5'
           bundler-cache: true
 
-      - name: Setup Node 🧰
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install JS deps 📦
-        run: npm ci
-
       - name: Install and Build 🔧
         run: |
           export JEKYLL_ENV=production
           bundle exec jekyll build
-
-      - name: Purge unused CSS 🧹
-        run: npm run build:purgecss
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4

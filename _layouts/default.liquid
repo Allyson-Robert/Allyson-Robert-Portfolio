@@ -47,7 +47,7 @@
       {{ content }}
     </main>
 
-    <footer class="fixed-bottom">
+    <footer{% if site.footer_fixed %} class="fixed-bottom"{% endif %}>
       <div class="container mt-0">
         <small>{{ site.footer_text }}</small>
       </div>
