@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}
+    </title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | strip }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    {% feed_meta %}
+  </head>
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <header>
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+            <ul class="navbar-nav navbar-menu-list flex-nowrap">
+              {% assign sorted_pages = site.pages | where: 'nav', true | sort: 'nav_order' %}
+              {% for nav_page in sorted_pages %}
+                <li class="nav-item {% if page.url == nav_page.url %}active{% endif %}">
+                  <a class="nav-link" href="{{ nav_page.url | relative_url }}">
+                    {{ nav_page.title }}
+                    {% if page.url == nav_page.url %}<span class="sr-only">(current)</span>{% endif %}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5" role="main">
+      {{ content }}
+    </main>
+
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        <small>{{ site.footer_text }}</small>
+      </div>
+    </footer>
+  </body>
+</html>
