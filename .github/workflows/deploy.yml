@@ -7,11 +7,14 @@ on:
       - main
     paths:
       - "assets/**"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
+      - "_sass/**"
+      - "_layouts/**"
+      - "**/*.html"
+      - "**/*.js"
+      - "**/*.liquid"
       - "**/*.md"
-      - "**.yml"
+      - "**/*.scss"
+      - "**/*.yml"
       - "Gemfile"
       - "Gemfile.lock"
       - "package.json"
@@ -24,11 +27,14 @@ on:
       - main
     paths:
       - "assets/**"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
+      - "_sass/**"
+      - "_layouts/**"
+      - "**/*.html"
+      - "**/*.js"
+      - "**/*.liquid"
       - "**/*.md"
-      - "**.yml"
+      - "**/*.scss"
+      - "**/*.yml"
       - "Gemfile"
       - "Gemfile.lock"
       - "package.json"
@@ -76,9 +82,7 @@ jobs:
           bundle exec jekyll build
 
       - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
+        run: npm run build:purgecss
 
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'

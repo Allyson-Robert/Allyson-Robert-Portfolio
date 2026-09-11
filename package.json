@@ -1,4 +1,10 @@
 {
   "name": "allyson-robert-portfolio",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build:purgecss": "purgecss -c purgecss.config.js"
+  },
+  "devDependencies": {
+    "purgecss": "8.0.0"
+  }
 }
