@@ -8,7 +8,7 @@ footer_text: >-
   projects, hobbies, and personal builds.
 keywords: academic portfolio, research, hobbies, templates, builds
 icon: ✦
-url: https://replace-with-custom-domain.example.com
+url: ""
 baseurl: ""
 lang: en
 back_to_top: true
@@ -76,7 +76,6 @@ exclude:
   - purgecss.config.js
   - vendor/
 keep_files:
-  - CNAME
   - .nojekyll
 theme: al_folio_core
 plugins:

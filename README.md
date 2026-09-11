@@ -10,5 +10,5 @@ A Jekyll portfolio scaffold based on the al-folio starter structure, tailored to
 
 ## Notes
 
-- Replace the placeholder custom domain in [`CNAME`](./CNAME) and [`_config.yml`](./_config.yml) with the final production domain.
+- Add a `CNAME` file and set `url` in [`_config.yml`](./_config.yml) once the final production custom domain is ready.
 - Replace the placeholder contact links, CV PDF, and page content as real materials are ready.

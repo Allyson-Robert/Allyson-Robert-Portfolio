@@ -8,8 +8,12 @@
     </title>
     <meta name="description" content="{{ page.description | default: site.description | strip_html | strip }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="canonical" href="{{ page.url | absolute_url }}">
-    {% feed_meta %}
+    {% if site.url and site.url != "" %}
+      <link rel="canonical" href="{{ page.url | absolute_url }}">
+      {% feed_meta %}
+    {% else %}
+      <link rel="canonical" href="{{ page.url | relative_url }}">
+    {% endif %}
   </head>
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <header>
