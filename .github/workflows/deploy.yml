@@ -1,0 +1,52 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "_sass/**"
+      - "_layouts/**"
+      - "**/*.html"
+      - "**/*.js"
+      - "**/*.liquid"
+      - "**/*.md"
+      - "**/*.scss"
+      - "**/*.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "CNAME"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby 💎
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.5'
+          bundler-cache: true
+
+      - name: Install and Build 🔧
+        run: |
+          export JEKYLL_ENV=production
+          if [ -f CNAME ]; then
+            bundle exec jekyll build --baseurl ""
+          else
+            bundle exec jekyll build --baseurl "/${{ github.event.repository.name }}"
+          fi
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _site

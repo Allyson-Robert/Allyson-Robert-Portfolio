@@ -1,0 +1,81 @@
+title: Allyson Robert
+first_name: Allyson
+last_name: Robert
+description: >-
+  A portfolio site bringing together academic research, side projects, and life beyond the lab.
+footer_text: >-
+  Built with Jekyll and the al-folio starter, with one shared visual language for research,
+  projects, hobbies, and personal builds.
+keywords: academic portfolio, research, hobbies, templates, builds
+icon: ✦
+url: "https://allyson-robert.github.io"
+baseurl: ""
+lang: en
+back_to_top: true
+navbar_fixed: true
+footer_fixed: false
+search_enabled: false
+socials_in_search: false
+posts_in_search: false
+bib_search: false
+max_width: 980px
+al_folio:
+  api_version: 1
+  style_engine: tailwind
+  tailwind:
+    version: 4.1.18
+    preflight: false
+    css_entry: assets/tailwind/app.css
+  distill:
+    engine: distillpub-template
+    source: al-org-dev/distill-template#al-folio
+    allow_remote_loader: false
+  compat:
+    bootstrap:
+      enabled: true
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+sass:
+  style: compressed
+include:
+  - _pages
+collections:
+  news:
+    output: true
+  projects:
+    output: true
+  builds:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: page
+      permalink: /projects/:title/
+  - scope:
+      path: ""
+      type: builds
+    values:
+      layout: page
+      permalink: /builds/:title/
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: post
+      permalink: /news/:title/
+      sitemap: false
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+theme: al_folio_core
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - al_folio_core

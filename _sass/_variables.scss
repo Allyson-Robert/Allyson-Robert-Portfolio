@@ -1,0 +1,25 @@
+/*******************************************************************************
+ * Local design token overrides for Allyson Robert's portfolio.
+ ******************************************************************************/
+
+@use "sass:color";
+
+$purple-color: #771b7b !default;
+$orange-color: #c16b49 !default;
+$red-color-dark: #c16b49 !default;
+$cyan-color: #a44ea7 !default;
+$grey-color: #7f6668 !default;
+$grey-color-light: #dbc8c8 !default;
+$grey-color-dark: #2f232d !default;
+$grey-900: #241a24 !default;
+$white-color: #fcefef !default;
+$black-color: #1f1f1f !default;
+$code-bg-color-light: rgba($purple-color, 0.06) !default;
+$code-bg-color-dark: #312334 !default;
+$max-content-width: 980px !default;
+$back-to-top-z-index: 10 !default;
+$back-to-top-bottom: 30px !default;
+$back-to-top-right: 30px !default;
+$back-to-top-diameter: 40px !default;
+$back-to-top-height: $back-to-top-diameter !default;
+$back-to-top-width: $back-to-top-diameter !default;
