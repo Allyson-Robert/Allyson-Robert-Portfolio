@@ -75,8 +75,6 @@ exclude:
   - package-lock.json
   - purgecss.config.js
   - vendor/
-keep_files:
-  - .nojekyll
 theme: al_folio_core
 plugins:
   - jekyll-feed
