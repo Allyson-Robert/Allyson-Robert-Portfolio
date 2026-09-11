@@ -43,7 +43,7 @@ include:
   - _pages
 collections:
   news:
-    output: false
+    output: true
   projects:
     output: true
   builds:
@@ -65,6 +65,8 @@ defaults:
       path: ""
       type: news
     values:
+      layout: post
+      permalink: /news/:title/
       sitemap: false
 exclude:
   - README.md

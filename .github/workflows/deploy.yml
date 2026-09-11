@@ -37,9 +37,11 @@ jobs:
           bundler-cache: true
 
       - name: Install and Build 🔧
+        env:
+          PAGES_BASEURL: /${{ github.event.repository.name }}
         run: |
           export JEKYLL_ENV=production
-          bundle exec jekyll build
+          bundle exec jekyll build --baseurl "$PAGES_BASEURL"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
