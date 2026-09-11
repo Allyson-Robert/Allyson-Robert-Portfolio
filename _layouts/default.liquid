@@ -20,7 +20,7 @@
       <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
         <div class="container">
           <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-          <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
@@ -52,20 +52,5 @@
         <small>{{ site.footer_text }}</small>
       </div>
     </footer>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const navButton = document.querySelector('[data-nav-toggle]');
-        if (!navButton) return;
-        const navTarget = document.getElementById(navButton.getAttribute('data-nav-toggle'));
-        if (!navTarget) return;
-
-        navButton.addEventListener('click', function () {
-          const isExpanded = navButton.getAttribute('aria-expanded') === 'true';
-          navButton.setAttribute('aria-expanded', String(!isExpanded));
-          navButton.classList.toggle('collapsed', isExpanded);
-          navTarget.classList.toggle('show', !isExpanded);
-        });
-      });
-    </script>
   </body>
 </html>
